@@ -23,7 +23,7 @@ public class EmployeeController {
 
 		List<Employee> employeeList = null;
 		try {
-			File file = ResourceUtils.getFile("classpath:abc.csv");
+			File file = ResourceUtils.getFile("classpath:MOCK_DATA.csv");
 			employeeList = Utility.getEmployeeList(file);
 		} catch (IOException e) {
 			System.out.println("File not found");
@@ -38,7 +38,7 @@ public class EmployeeController {
 
 		List<Employee> employeeList = null;
 		try {
-			File file = ResourceUtils.getFile("classpath:abc.csv");
+			File file = ResourceUtils.getFile("classpath:MOCK_DATA.csv");
 			employeeList = Utility.getEmployeeList(file);
 		} catch (IOException e) {
 			System.out.println("File not found");
